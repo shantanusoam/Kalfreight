@@ -1,0 +1,21 @@
+{
+  "name": "kalfreight",
+  "version": "1.0.0",
+  "description": "Kalfreight Portfolio Website",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "compile:sass": "node-sass scss/style.scss css/style.css -w"
+  },
+  "author": "Shantanu",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^6.0.0"
+  },
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "lodash": "^4.17.21",
+    "vanilla-tilt": "^1.7.0"
+  }
+}
