@@ -369,7 +369,7 @@ box-shadow: 10px 10px 20px -5px rgba(122,122,122,0.28);
 transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 margin-top: 0px;
 margin-bottom: 0px;
-padding: 30px 20px 20px 20px;
+padding: 10px 8px 8px 8px;
 background-color: white;
 z-index: 1;
   &-left_margin{
@@ -381,10 +381,10 @@ z-index: 1;
     padding: 0.7rem;
    }
   &-heading{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     h2{
       font-family: "Overpass", Sans-serif;
-font-size: 28px;
+font-size: 30px;
 font-weight: 900;
 color: #333333;
     }
@@ -394,7 +394,7 @@ color: #333333;
     p{
       color: #595959;
 font-family: "Karla", Sans-serif;
-font-size: 19px;
+font-size: 18px;
     }
   }
   &:hover{
@@ -720,4 +720,61 @@ li{
       }
     }
   }
+}
+.sitecountdown{
+  background-color: crimson;
+  display:flex;
+flex-direction: column;
+align-items: center;
+  &__container{
+    
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1036px) {
+     
+      flex-direction: row;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr ;
+     
+    }
+    &--box{
+      
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @media (max-width: 1036px) {
+        padding-bottom: 50px;
+       
+       
+        &:last-child{
+          padding-bottom: 0;
+        }
+      }
+      h1{
+        color: white;
+       
+      }
+      h3{
+        color: white;
+      }
+    }
+  }
+  
+}
+.counternumber{
+  font-size: 30px;
+  color: white;
+  font-weight: 600;
+}
+.btn--blue{
+  color: blue;
+}
+.slider__para{
+  font-size: 15px;
+  color: white;
 }

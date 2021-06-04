@@ -177,7 +177,7 @@
   transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
   margin-top: 0px;
   margin-bottom: 0px;
-  padding: 30px 20px 20px 20px;
+  padding: 10px 8px 8px 8px;
   background-color: white;
   z-index: 1; }
   .walkthrough__coloum-card-image_container {
@@ -191,10 +191,10 @@
     margin-right: 4rem;
     padding: 0.7rem; }
   .walkthrough__coloum-card-heading {
-    margin-bottom: 20px; }
+    margin-bottom: 15px; }
     .walkthrough__coloum-card-heading h2 {
       font-family: "Overpass", Sans-serif;
-      font-size: 28px;
+      font-size: 30px;
       font-weight: 900;
       color: #333333; }
   .walkthrough__coloum-card-paragraph {
@@ -202,7 +202,7 @@
     .walkthrough__coloum-card-paragraph p {
       color: #595959;
       font-family: "Karla", Sans-serif;
-      font-size: 19px; }
+      font-size: 18px; }
   .walkthrough__coloum-card:hover {
     box-shadow: 0px 0px 32px -13px rgba(79, 79, 79, 0.5); }
 
@@ -409,6 +409,48 @@ li a {
       position: relative;
       z-index: 1;
       transition: all 1s; }
+
+.sitecountdown {
+  background-color: crimson;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .sitecountdown__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+    @media (max-width: 1036px) {
+      .sitecountdown__container {
+        flex-direction: row;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr; } }
+    .sitecountdown__container--box {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      @media (max-width: 1036px) {
+        .sitecountdown__container--box {
+          padding-bottom: 50px; }
+          .sitecountdown__container--box:last-child {
+            padding-bottom: 0; } }
+      .sitecountdown__container--box h1 {
+        color: white; }
+      .sitecountdown__container--box h3 {
+        color: white; }
+
+.counternumber {
+  font-size: 30px;
+  color: white;
+  font-weight: 600; }
+
+.btn--blue {
+  color: blue; }
+
+.slider__para {
+  font-size: 15px;
+  color: white; }
 
 /* Base */
 body {
@@ -1506,8 +1548,9 @@ h1, h2, h3, h4, h5,
   .unit-1 p {
     opacity: 0;
     visibility: hidden;
+    font-size: large;
     transition: .3s all ease;
-    color: rgba(255, 255, 255, 0.5); }
+    color: rgb(255, 255, 255); }
   .unit-1:hover p {
     opacity: 1;
     visibility: visible; }

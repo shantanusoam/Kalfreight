@@ -13,6 +13,7 @@
 // $('.stop').on('click',function(){
 //     owl.trigger('stop.owl.autoplay')
 // })
+
 window.addEventListener('scroll', function(){
   const to_the_top = document.getElementById("flotingbutton");
   if(window.pageYOffset > 2000){
@@ -34,8 +35,8 @@ window.addEventListener('scroll', function(){
   if(window.pageYOffset > 0){
     logoImage.style.height = "64px";
     // uppernav.classList.add("New__kalfreight-header");
-    uppernav1.classList.add("New__kalfreight-header-content-a");
-    uppernav2.classList.add("New__kalfreight-header-content") ; 
+
+    // uppernav2.classList.add("New__kalfreight-header-content"); 
   }
   else{
     logoImage.style.height = "84px";
@@ -115,3 +116,4 @@ window.addEventListener('scroll', function(){
 //   } else {
 //     path.style.strokeDasharray = pathLength + ' ' + pathLength;
 //   }
+
