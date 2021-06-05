@@ -354,8 +354,14 @@ header {
   transition: all 1s; }
 
 #logo--image {
-  transition: all 1s linear;
+  transition: all 0.3s linear;
   height: 45px; }
+
+.Make__it-black li a {
+  color: black !important; }
+
+li a {
+  color: black; }
 
 .New__kalfreight-header {
   height: 0px !important; }
@@ -365,9 +371,6 @@ header {
 
 .New__kalfreight-header-content-a {
   height: 0px !important; }
-
-li a {
-  color: white; }
 
 .kalfreight-header__type {
   font-size: 14px;
@@ -1548,9 +1551,8 @@ h1, h2, h3, h4, h5,
   .unit-1 p {
     opacity: 0;
     visibility: hidden;
-    font-size: large;
     transition: .3s all ease;
-    color: rgb(255, 255, 255); }
+    color: rgba(255, 255, 255, 0.5); }
   .unit-1:hover p {
     opacity: 1;
     visibility: visible; }

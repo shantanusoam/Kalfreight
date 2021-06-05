@@ -644,9 +644,21 @@ header{
   transition: all 1s;
 }
 #logo--image{
-  transition: all 1s linear;
+  transition: all 0.3s linear;
     height: 45px;
   
+}
+.Make__it-black{
+  li{
+    a{
+      color: black !important;
+    }
+  }
+}
+li{
+  a{
+    color: black;
+  }
 }
 .New__kalfreight-header{
   height: 0px !important;
@@ -663,11 +675,7 @@ header{
   
 }
 
-li{
-  a{
-    color: white;
-  }
-}
+
 .kalfreight-header{
   &__type{
     
