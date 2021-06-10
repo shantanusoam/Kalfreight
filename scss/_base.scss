@@ -289,6 +289,17 @@
 //   margin-left: auto;
 //   position: relative;
 // }
+.elementor-image{
+ &img{
+   width: 128;
+   height: 128;
+   @include respond(tab-port){
+    width: 55;
+    height: 55;
+  }
+ }
+ 
+}
 .elementor-row {
   width: 100%;
   display: -webkit-box;
@@ -296,6 +307,12 @@
   display: -ms-flexbox;
   display: flex;
   padding: 30px,20px,20px,20px;
+  @include respond(tab-port){
+    width: 50%;
+    flex-direction: column;
+ 
+  }
+ 
 }
   .elementor-widget-wrap {
     position: relative;
@@ -306,6 +323,11 @@
     -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
+    @include respond(tab-port){
+ 
+     width: 50%;
+    }
+   
 }
 
 .walkthrough{
@@ -372,6 +394,11 @@ margin-bottom: 0px;
 padding: 10px 8px 8px 8px;
 background-color: white;
 z-index: 1;
+@include respond(phone){
+ 
+ text-align: center;
+
+}
   &-left_margin{
    margin-left: 4rem;
    padding: 0.7rem;
@@ -395,6 +422,11 @@ color: #333333;
       color: #595959;
 font-family: "Karla", Sans-serif;
 font-size: 18px;
+@include respond(tab-port){
+ 
+  font-size: 17px;
+
+}
     }
   }
   &:hover{
@@ -678,7 +710,7 @@ li{
 
 .kalfreight-header{
   &__type{
-    
+      
       font-size: 14px;
       font-size: .875rem;
       height: 40px;
@@ -755,6 +787,9 @@ align-items: center;
       display: flex;
       flex-direction: column;
       align-items: center;
+      &-Image{
+        padding-bottom: 10px;
+      }
       @media (max-width: 1036px) {
         padding-bottom: 50px;
        
