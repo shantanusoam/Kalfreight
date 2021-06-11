@@ -723,11 +723,14 @@ li{
       justify-content: flex-end;
       -webkit-transition: all .25s linear .25s;
       transition: all .25s linear .25s;
+      @include respond(phone){
+       
+      }
     &-content{
       
         content: "";
         position: absolute;
-        width: 284px;
+        width: 30%;
         height: 40px;
         right: -10px;
         top: 0;
