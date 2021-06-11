@@ -409,7 +409,7 @@ li a {
   .kalfreight-header__type-content {
     content: "";
     position: absolute;
-    width: 284px;
+    width: 30%;
     height: 40px;
     right: -10px;
     top: 0;
