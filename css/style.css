@@ -303,6 +303,9 @@
 
 .Driverform__joining-body {
   margin: 100px; }
+  @media (max-width: 37.5em) {
+    .Driverform__joining-body {
+      margin: 10px; } }
   .Driverform__joining-body-content {
     padding: 0; }
   .Driverform__joining-body li {
@@ -777,6 +780,12 @@ h1, h2, h3, h4, h5,
   font-size: 45px;
   color: white;
   border-radius: 50%; }
+  @media (max-width: 37.5em) {
+    .flotingbutton-to_the_top {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+      box-shadow: 0 3px 5px 0 #666; } }
   .flotingbutton-to_the_top:hover {
     animation: on_the_top 1s;
     animation-iteration-count: infinite; }
@@ -796,6 +805,13 @@ h1, h2, h3, h4, h5,
   z-index: 200;
   font-size: 15px;
   color: white; }
+  @media (max-width: 37.5em) {
+    .flotingbutton-findus {
+      line-height: 20px;
+      width: 45px;
+      height: 40px;
+      font-size: 15px;
+      box-shadow: 0 3px 5px 0 #666; } }
   .flotingbutton-findus:hover {
     box-shadow: 0 6px 14px 0 #666;
     background-color: #0071BC;

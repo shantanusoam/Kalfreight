@@ -355,7 +355,12 @@ h1, h2, h3, h4, h5,
 		bottom: 5px;
 		width: 80px;
 	height: 80px;
-	
+	@include respond(phone){
+		width: 40px;
+	height: 40px;
+	font-size: 20px;
+	box-shadow: 0 3px 5px 0 #666;
+	   }
 	
 	box-shadow: 0 6px 10px 0 #666;
 	transition: all 0.1s ease-in-out;
@@ -381,7 +386,13 @@ h1, h2, h3, h4, h5,
 		bottom: 5px;
 		width: 70px;
 	height: 80px;
-	
+	@include respond(phone){
+		line-height: 20px;
+		width: 45px;
+	height: 40px;
+	font-size: 15px;
+	box-shadow: 0 3px 5px 0 #666;
+	   }
 	
 	box-shadow: 0 6px 10px 0 #666;
 	transition: all 0.1s ease-in-out;

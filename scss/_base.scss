@@ -566,8 +566,13 @@ filter: brightness( 163% ) contrast( 200% ) saturate( 0% ) blur( 0px ) hue-rotat
 }
 
 .Driverform__joining{
+  
   &-body{
     margin: 100px;
+    @include respond(phone){
+ 
+      margin: 10px;
+    }
     &-content{
       padding: 0;
      
