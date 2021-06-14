@@ -128,7 +128,7 @@
   padding: 30px,20px,20px,20px; }
   @media (max-width: 56.25em) {
     .elementor-row {
-      width: 50%;
+      width: 100%;
       flex-direction: column; } }
 
 .elementor-widget-wrap {
@@ -142,9 +142,10 @@
   align-content: flex-start; }
   @media (max-width: 56.25em) {
     .elementor-widget-wrap {
-      width: 50%; } }
+      width: 100%; } }
 
 .walkthrough {
+  width: 100vw;
   padding: 0; }
   .walkthrough__coloum-gap {
     max-width: 1140px;
@@ -166,12 +167,18 @@
       font-family: "Lato", Sans-serif;
       font-size: 44px;
       font-weight: 800; }
+      @media (max-width: 56.25em) {
+        .walkthrough__coloum-wrap-heading {
+          font-size: 20px; } }
     .walkthrough__coloum-wrap-heading-box {
       margin-top: 30px;
       text-align: center;
       z-index: 5; }
       .walkthrough__coloum-wrap-heading-box-padding {
         padding-bottom: 30px; }
+      @media (max-width: 56.25em) {
+        .walkthrough__coloum-wrap-heading-box {
+          font-size: 20px; } }
 
 .elementor-widget-wrap {
   position: relative;
@@ -199,15 +206,28 @@
     padding: 5px;
     display: flex;
     position: relative; }
+    @media (max-width: 56.25em) {
+      .walkthrough__coloum-card-image_container {
+        text-align: center;
+        padding: 1px; } }
   @media (max-width: 37.5em) {
     .walkthrough__coloum-card {
+      margin-bottom: 30px;
       text-align: center; } }
   .walkthrough__coloum-card-left_margin {
     margin-left: 4rem;
     padding: 0.7rem; }
+    @media (max-width: 37.5em) {
+      .walkthrough__coloum-card-left_margin {
+        margin-left: 0rem;
+        padding: 0rem; } }
   .walkthrough__coloum-card-right_margin {
     margin-right: 4rem;
     padding: 0.7rem; }
+    @media (max-width: 37.5em) {
+      .walkthrough__coloum-card-right_margin {
+        margin-right: 0rem;
+        padding: 0rem; } }
   .walkthrough__coloum-card-heading {
     margin-bottom: 15px; }
     .walkthrough__coloum-card-heading h2 {
@@ -238,6 +258,9 @@
     margin: 20px,0px,40px,0px;
     width: 950px;
     filter: brightness(163%) contrast(200%) saturate(0%) blur(0px) hue-rotate(0deg); }
+  @media (max-width: 37.5em) {
+    .walkthrough__background-image {
+      display: none; } }
 
 .left-arrow {
   transform: scaleX(-1); }
