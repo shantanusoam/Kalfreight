@@ -649,11 +649,12 @@ header{
   z-index: 112;
   width: 100%;
   .container-nav{
-    max-width: 100%;
+    max-width: 100vw;
     margin: 0 auto;
     background-color: white;
     text-decoration:rgba(27, 27, 27, 0.89);
     transition: all 1s;
+    
     &-textdecoration{
       
     }
@@ -723,9 +724,7 @@ li{
       justify-content: flex-end;
       -webkit-transition: all .25s linear .25s;
       transition: all .25s linear .25s;
-      @include respond(phone){
-       
-      }
+     
     &-content{
       
         content: "";
@@ -734,6 +733,9 @@ li{
         height: 40px;
         right: -10px;
         top: 0;
+        @include respond(phone){
+          width: 40%;
+        }
         -webkit-transform: skew(
       -29deg
         );
