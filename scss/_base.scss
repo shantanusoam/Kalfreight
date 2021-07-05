@@ -38,6 +38,7 @@
   }
  
   .walkthrough{
+    padding-top: 0px !important;
     z-index: 20;
     display: flex;
     flex-direction: column;
@@ -422,6 +423,9 @@ z-index: 5;
 
 }
 .walkthrough__coloum-card{
+  &:last-child{
+    margin-bottom: 0;
+  }
   &-image_container{
     padding: 5px;
     display: flex;
@@ -439,7 +443,7 @@ border-color: #f1f9fc;
 box-shadow: 10px 10px 20px -5px rgba(122,122,122,0.28);
 transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
 margin-top: 0px;
-margin-bottom: 25px;
+margin-bottom: 55px;
 padding: 10px 8px 8px 8px;
 background-color: white;
 z-index: 1;
