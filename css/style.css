@@ -33,6 +33,16 @@
     font-size: 20px;
     padding: 20px; }
 
+.CSR_Content {
+  margin-left: 12rem;
+  margin-right: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start; }
+  .CSR_Content img {
+    padding-top: 5rem; }
+
 .walkthrough {
   padding-top: 0px !important;
   z-index: 20;
