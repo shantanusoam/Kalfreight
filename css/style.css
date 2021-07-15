@@ -333,9 +333,8 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    font-size: 3rem;
-    font-weight: 500;
-    background-color: aqua; }
+    font-size: 2rem;
+    font-weight: 500; }
   .technolgy__used-content {
     display: flex;
     flex-direction: row;
